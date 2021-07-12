@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sneaker Vault</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- https://app.swaggerhub.com/apis-docs/tg4solutions/the-sneaker-database/1.0.0#/sneakers/getSneakers -->
+  <script src="https://use.fontawesome.com/8c03b87a82.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="neon-red"><span class="neon-blue">The</span><br>Sneaker Vault</h1>
+    <a href="#main-section" class="neon button">Enter</a>
+  </header>
+  <main id="main-section" class="linear-gradient">
+    <form action="" class="form">
+      <div class="brand-box border">
+        <label for="brand">Brand</label>
+        <select id="brand" class="neon button no-text-shadow">
+          <option value="Adidas">Adidas</option>
+          <option value="Asics">Asics</option>
+          <option value="Converse">Converse</option>
+          <option value="Jordan">Jordan</option>
+          <option value="New Balance">New Balance</option>
+          <option value="Nike">Nike</option>
+          <option value="Puma">Puma</option>
+          <option value="Reebok">Reebok</option>
+          <option value="Saucony">Saucony</option>
+          <option value="Under Armour">Under Armour</option>
+          <option value="Vans">Vans</option>
+        </select>
+      </div>
+  
+      <div class="gender-box border">
+        <label for="gender">Gender</label>
+        <select id="gender" class="neon button no-text-shadow">
+          <!-- STRETCH GOAL: Add an option for no gender selection -->
+          <option value="men">Men</option>
+          <option value="child">Child</option>
+          <option value="infant">Infant</option>
+          <option value="preschool">Preschool</option>
+          <option value="toddler">Toddler</option>
+          <option value="women">Women</option>
+        </select>
+      </div>
+      <!-- STRETCH GOAL: Make "Sneaker Name and Submit button functional" -->
+      <!-- <div class="sneaker-box border">
+        <label for="sneaker-name">Sneaker Name</label>
+        <input type="text" id="sneaker-name" name="sneaker-name" placeholder="Jordan 11 Concords" class="btn blue">
+      </div> -->
+      <!-- <div class="submit-box">
+        <input type="submit" value="Submit" class="neon button">
+      </div> -->
+      <!-- STRETCH GOAL: Add reset button -->
+    </form>
+    <section class="results">
+    </section>
+  </main>
+  <footer>
+    <p>Created at <a href="https://junocollege.com/">Juno College</a> by <a href="http://septembreanderson.com/">Septembre Anderson</a></p>
+  </footer>
+  <script src="./scripts/scripts.js"></script>
+</body>
+</html>

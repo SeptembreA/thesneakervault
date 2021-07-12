@@ -1,0 +1,271 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body {
+  background-color: #030C1C;
+}
+/* Styling for neon header text START */
+@font-face {
+  font-family: 'neontubes';
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'neontubes';
+  font-weight: normal;
+  font-style: normal;
+}
+
+label {
+  font-family: 'neontubes';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  color: #F7F3F7;
+  letter-spacing: 2px;
+}
+
+select {
+  font-size: 18px;
+}
+
+header {
+  background: #030C1C;
+  height: 100vh;
+  padding-top: 100px;
+  font-family: "neontubes";
+  font-size: 60px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  -webkit-transform: translateZ(0) translate3D(0, 0, 0);transform: translateZ(0) translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+  margin-bottom: 70px;
+}
+
+header .neon-red {
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+  -webkit-animation: blink 4s infinite alternate;
+  animation: blink 4s infinite alternate;
+}
+
+header .neon-blue {
+  font-size: 100px;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+  -webkit-animation: buzz 0.01s infinite alternate;
+  animation: buzz 0.01s infinite alternate;
+}
+ 
+@-webkit-keyframes buzz {
+  70% {
+    opacity: 0.80;
+  }
+}
+ 
+@keyframes buzz {
+  70% {
+    opacity: 0.80;
+  }
+}
+
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+/* Styling for neon header text END */
+
+/* Styling for neon button START */
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  border: 0;
+  cursor: pointer;
+  min-width: 48px;
+  min-height: 36px;
+  background-color: #ff00dd;
+  color: #F7F3F7;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 0.66em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 40px;
+}
+
+.button.neon, button.neon, input[type="button"].neon, input[type="reset"].neon, input[type="submit"].neon {
+  margin-top: 10px;
+  border-radius: 0.4em;
+  font-weight: 900;
+  padding: 0.44em;
+  font-family: 'neontubes';
+  letter-spacing: 0.04em;
+  background: transparent !important;
+  border: 0.08em solid #ffffff;
+  color: #ffffff;
+  text-shadow: #ffffff 0px 0px 0.15em, #ffffff 0px 0px 0.3em, #ffffff 0px 0px 0.45em, #00FF00 0px 0px 0.3em, #00FF00 0px 0px 0.52em, #00FF00 0px 0px 0.6em, #00FF00 0px 0px 0.75em;
+  box-shadow: #ffffff 0px 0px 0.075em, #ffffff 0px 0px 0.15em, #ffffff 0px 0px 0.22em, #00FF00 0px 0px 0.3em, #00FF00 0px 0px 0.52em, #00FF00 0px 0px 0.6em, #00FF00 0px 0px 0.75em, inset #00FF00 0 0 0.6em;
+}
+
+.button.neon.no-text-shadow {
+  text-shadow: none;
+}
+
+.button.neon:hover, button.neon:hover, input[type="button"].neon:hover, input[type="reset"].neon:hover, input[type="submit"]s.neon:hover {
+  text-shadow: #ffffff 0px 0px 0.3em, #ffffff 0px 0px 0.6em, #ffffff 0px 0px 0.9em, #00FF00 0px 0px 0.6em, #00FF00 0px 0px 1.04em, #00FF00 0px 0px 1.2em, #00FF00 0px 0px 1.5em;
+  box-shadow: #ffffff 0px 0px 0.15em, #ffffff 0px 0px 0.3em, #ffffff 0px 0px 0.44em, #00FF00 0px 0px 0.6em, #00FF00 0px 0px 1.04em, #00FF00 0px 0px 1.2em, #00FF00 0px 0px 1.5em, inset #00FF00 0 0 1.2em;
+}
+/* Styling for neon button END */
+
+form.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 60px 40px 120px;
+}
+
+.brand-box, .gender-box, .sneaker-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 0 40px;
+}
+
+.submit-box .neon {
+  margin-top: 40px !important;
+}
+
+select, input {
+  margin-top: 20px;
+}
+
+.submit-box .button {
+  display: block;
+  margin: 0 auto;
+}
+
+form .neon.button {
+  font-size: 20px;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+.brand-box, .gender-box {
+  position: relative;
+}
+
+.brand-box:after, .gender-box:after {
+	font-family: FontAwesome;
+  content: '\f107';
+  font-size: 28px;
+  position: absolute;
+  top: 60px;
+  right: 55px;
+  color: #F7F3F7;
+  pointer-events: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/* .btn {
+  margin: 1em 0;
+  padding: 1em 2em;
+  background: transparent;
+  border-radius: 6px;
+  font-weight: 400;
+  text-align: center;
+} */
+
+.results {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sneaker-card {
+  background-color: transparent;
+  border: 3px solid #F7F3F7;
+  border-radius: 0.4em;
+  box-shadow: 0px 0px 25px 10px #99D2D0, inset 0px 0px 25px 10px #99D2D0;
+  padding: 0 10px;
+  color: #F7F3F7;
+  text-shadow: 0 0 5px #99D2D0;
+  width: 22%;
+  height: 350px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sneaker-card:nth-child(even) {
+  box-shadow: 0px 0px 25px 10px #ff00ff, inset 0px 0px 25px 10px #ff00ff;
+}
+
+.sneaker-card:nth-child(odd) {
+  box-shadow: 0px 0px 25px 10px #0066FF, inset 0px 0px 25px 10px #0066FF;
+}
+
+.sneaker-card img {
+  width: 100%;
+  margin: 0 auto;
+}
+footer {
+  background-color: #F7F3F7;
+  padding-top: 60px;
+}
+
+footer p {
+  color: #030C1C;
+  text-align: center;
+  margin: 0;
+}
